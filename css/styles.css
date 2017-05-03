@@ -1,0 +1,36 @@
+body {
+    /*flex settings*/
+    align-items: center; /*centers items on the cross-axis (y by default)*/
+    -webkit-align-items: center;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction:column;
+    justify-content: center; /*centers items on the line (the x-axis by default)*/
+    -webkit-justify-content: center;
+    
+    background-color: #CDDAE0;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.resume{
+    margin: 25px 100px;
+}
+
+footer {
+    /*flex settings*/
+    align-items: center; /*centers items on the cross-axis (y by default)*/
+    -webkit-align-items: center;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction:row;
+    justify-content: center; /*centers items on the line (the x-axis by default)*/
+    -webkit-justify-content: center;
+
+    background-color: white;
+    width: 100%;
+}
+
+.social-media-links {
+    padding: 10px;
+    margin-top: 10px;
+}
