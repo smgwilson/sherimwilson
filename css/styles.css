@@ -1,40 +1,205 @@
+/* ----------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------- */
+
+
+html {
+    background-color: #CDDAE0;
+    color:#0a111c;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
 body {
     /*flex settings*/
-    align-items: center; /*centers items on the cross-axis (y by default)*/
-    -webkit-align-items: center;
     display: flex;
-    display: -webkit-flex;
-    flex-direction:column;
-    justify-content: center; /*centers items on the line (the x-axis by default)*/
-    -webkit-justify-content: center;
-    
-    background-color: #CDDAE0;
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center; 
+    min-height:100%;
+    overflow-x: hidden;
 }
 
-.resume{
-    margin: 25px 100px;
+section {
+    display:flex;
+    flex-direction: column;
+    margin-top: 25px;
+    width:70%;
+}
+/*---------------------------------*/
+/*-header styles*/
+/----------------------------------*/
+
+h1 {
+    margin:0;
 }
 
-footer {
+header {
     /*flex settings*/
-    align-items: center; /*centers items on the cross-axis (y by default)*/
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between; 
+    /* align-items:center; */
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(images/IMG_0264.jpg) no-repeat center center fixed;
+    background-size:cover;
+    height:100vh;
+    width:100vw;
+    color: #ffffff;
+}
+
+.header-text{
+    display:flex;
+    flex-direction: column;
+    height:60%;
+    align-items: center;
     -webkit-align-items: center;
+    justify-content:flex-start;
+    -webkit-justify-content: flex-start;
+    width: 85%;
+   
+}
+
+.header-text h1 {
+    font-size: 325%;
+    padding: 5px;
+    font-weight:300;
+    margin:0;
+}
+
+.main-nav {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style:none;  
+    width:85%;
+    
+}
+
+.main-nav li {
+    display: inline;
+    margin: 60px 20px;
+    padding:10px;
+    text-transform: uppercase;
+    font-size: 125%;
+    color: #fff;  
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #fff;  
+    text-decoration:none;
+    border-bottom: 2px solid transparent;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #22A7F0;
+    padding: 5px;
+}
+
+
+/*---------------------------------*/
+/*-Resume*/
+/----------------------------------*/
+
+article {
+    width:70%;
+   
+}
+
+.resume-background {
+    border:1px;
+    background-color: #C0C0C0;
+    color:#000;
+    margin-bottom: 50px;
+    border:1px solid #000;
+}
+.resume{
+    margin-bottom:30px;
+    font-size:80%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content:flex-start;
+    -webkit-justify-content: flex-start;
+   
+}
+
+.current-resume {
+    margin-top:30px;
+}
+
+
+
+/*---------------------------------*/
+/*-Gallery*/
+/----------------------------------*/
+
+.gallery {
     display: flex;
     display: -webkit-flex;
     flex-direction:row;
-    justify-content: center; /*centers items on the line (the x-axis by default)*/
-    -webkit-justify-content: center;
-
-    background-color: white;
-    width: 100%;
+    align-items: center;
+    -webkit-align-items: center;
+    width:70%;
+  
 }
+
+.picture-showcase {
+    display: flex;
+    flex-direction:row;
+    list-style:none;
+    width:100%;
+    -webkit-padding-start: 0;
+}
+
+
+.picture-showcase img {
+    width:100%;
+    border-radius: 15%;
+}
+
+
+/*---------------------------------*/
+/*-About*/
+/----------------------------------*/
+.about {
+    display:flex;
+    justify-content:space-between;
+    width:70%;  
+    
+}
+
+.about p {
+    line-height: normal;
+}
+
+/*---------------------------------*/
+/*-Footer*/
+/----------------------------------*/
 
 .social-media-links {
     padding: 10px;
     margin-top: 10px;
 }
 
-.main-img {
-    border-radius:50%;
+.social-media-links img {
+    margin: 10px;
 }
+footer {
+    /*flex settings*/
+    display: flex;
+    display: -webkit-flex;
+    flex-direction:row;
+    justify-content: center; /*centers items on the line (the x-axis by default)*/
+    -webkit-justify-content: center;
+    align-items: center; /*centers items on the cross-axis (y by default)*/
+    -webkit-align-items: center;
+
+    /*other settings*/
+    background-color: white;
+    width: 100%;
+}
+
