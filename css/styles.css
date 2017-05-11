@@ -1,3 +1,5 @@
+/* Put your CSS code in the left column, instead of example, to put or remove unnecessary prefixes. */
+
 /* ----------------------------------------------- */
 /* BASIC SETUP */
 /* ----------------------------------------------- */
@@ -13,17 +15,31 @@ html {
 
 body {
     /*flex settings*/
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items:center; 
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center; 
     min-height:100%;
     overflow-x: hidden;
 }
 
 section {
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-top: 25px;
     width:70%;
 }
@@ -37,24 +53,41 @@ h1 {
 
 header {
     /*flex settings*/
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content:space-between; 
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack:justify;
+        -ms-flex-pack:justify;
+            justify-content:space-between; 
     /* align-items:center; */
-    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(images/IMG_0264.jpg) no-repeat center center fixed;
-    background-size:cover;
+    background:-webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.5))), url(images/IMG_0264.jpg) no-repeat center;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(images/IMG_0264.jpg) no-repeat center;
+    background-size:contain;
     height:100vh;
     width:100vw;
     color: #ffffff;
 }
 
 .header-text{
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height:60%;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-align-items: center;
-    justify-content:flex-start;
+    -webkit-box-pack:start;
+        -ms-flex-pack:start;
+            justify-content:flex-start;
     -webkit-justify-content: flex-start;
     width: 85%;
    
@@ -68,9 +101,16 @@ header {
 }
 
 .main-nav {
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     list-style:none;  
     width:85%;
     
@@ -120,11 +160,20 @@ article {
 .resume{
     margin-bottom:30px;
     font-size:80%;
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-align-items: center;
-    justify-content:flex-start;
+    -webkit-box-pack:start;
+        -ms-flex-pack:start;
+            justify-content:flex-start;
     -webkit-justify-content: flex-start;
    
 }
@@ -140,21 +189,34 @@ article {
 /----------------------------------*/
 
 .gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     display: -webkit-flex;
-    flex-direction:row;
-    align-items: center;
+    -webkit-box-orient:horizontal;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:row;
+            flex-direction:row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-align-items: center;
     width:70%;
   
 }
 
 .picture-showcase {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction:row;
+    -webkit-box-orient:horizontal;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:row;
+            flex-direction:row;
     list-style:none;
     width:100%;
     -webkit-padding-start: 0;
+    padding: 40px 0;
 }
 
 
@@ -168,8 +230,12 @@ article {
 /*-About*/
 /----------------------------------*/
 .about {
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
-    justify-content:space-between;
+    -webkit-box-pack:justify;
+        -ms-flex-pack:justify;
+            justify-content:space-between;
     width:70%;  
     
 }
@@ -192,16 +258,24 @@ article {
 }
 footer {
     /*flex settings*/
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     display: -webkit-flex;
-    flex-direction:row;
-    justify-content: center; /*centers items on the line (the x-axis by default)*/
+    -webkit-box-orient:horizontal;
+    -webkit-box-direction:normal;
+        -ms-flex-direction:row;
+            flex-direction:row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; /*centers items on the line (the x-axis by default)*/
     -webkit-justify-content: center;
-    align-items: center; /*centers items on the cross-axis (y by default)*/
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; /*centers items on the cross-axis (y by default)*/
     -webkit-align-items: center;
 
     /*other settings*/
     background-color: white;
     width: 100%;
 }
-
