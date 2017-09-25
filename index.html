@@ -2,20 +2,21 @@
 <html lang="en">
 <head>
     <title>Sheri M. Wilson</title>
-    
+    <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-
-    <link rel="stylesheet" type="text/css" href="vendors/css/reset.css" />  
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css" />  
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
 </head>
 
 <body>
-    <header>
+    <header class="container-fluid">
         <nav>
             <ul class="main-nav">
                 <li><a href="#about">About</a></li>
-                <li><a href="#resume">Resume</a></li>
+                <li><a href="vendors/Sheri%20Wilson%20Resume%20pdf.pdf" name="resume" download>Resume</a></li>
                 <li><a href="mailto:smgwilson37@gmail.com">Contact</a></li>
             </ul>
         </nav>
@@ -27,246 +28,46 @@
     
     <!-- About -->
    <section class="about">
-        <h2><a name="about">About Me</a></h2>
-            <div>
-                <p>I’m an East coast transplant who moved to the Bay in 2014 with my overweight Balinese cat. My lifestyle here is focused on lake walks, urban hikes, food and wine, tech meetups, and finding the ideal coffee shop to park in for a while with my Mac.
+       <div class="container">
+            <h2>About Me</h2>
+            <a name="about"></a>
+                <p>
+                I’m an East coast transplant who moved to the Bay in 2014 with my overweight Balinese cat. My lifestyle here is focused on lake walks, urban hikes, food and wine, tech meetups, and finding the ideal coffee shop to park in for a while with my Mac.
                 </p>  
 
-                 <p>I’ve been using HTML since before “align” was a deprecated attribute, and building serious applications for over 7 years in a variety of languages. I’ve worked across the full stack, but have been focused most recently on front-end.  This site is the result of me reading somewhere that if you’re a front-end developer, you should have a personal website.  I don’t even recall where I read it, but I immediately thought, “Gotta do that!”
+                 <p>
+                 I’ve been using HTML since before “align” was a deprecated attribute, and building serious applications for over 7 years in a variety of languages. I’ve worked across the full stack, but have been focused most recently on front-end.  This site is the result of me reading somewhere that if you’re a front-end developer, you should have a personal website.  I don’t even recall where I read it, but I immediately thought, “Gotta do that!”
                  </p>
 
-                <p>Technology is endlessly interesting because it’s always evolving, and there are always new languages and frameworks coming along.  Nowadays, my favorites to work with are ReactJs and Ruby on Rails (subject to change).  While there is no “one-size-fits-all” technical solution to every problem, I derive great satisfaction from figuring out what will work, and it makes my day to hear that something I developed has solved a need or made life easier for someone.  If there is something you’d like to bounce off me or share, <a href="mailto:sheri@sherimwilson.com">please reach out!</a>
+                <p>
+                Technology is endlessly interesting because it’s always evolving, and there are always new languages and frameworks coming along.  While there is no “one-size-fits-all” technical solution to every problem, I derive great satisfaction from finding the best tools for the job and adding to my own skillset. It makes my day to hear that something I developed has solved a need or made life easier for someone.  If there is something you’d like to bounce off me or share, <a href="mailto:sheri@sherimwilson.com">please reach out!</a> 
                 </p> 
+                
+                <p>You can also download my resume <a href="vendors/Sheri%20Wilson%20Resume%20pdf.pdf" name="resume" download>here</a>.</p>
             </div>
    </section>
-   
-   <div class="gallery">
-      <ul class="picture-showcase">
-        <li>
-            <figure>
-                <img  src="images/gallery1.jpg" alt="Lake Merritt">
-            </figure>
-        </li>
-        <li>
-            <figure>
-                <img  src="images/gallery2.jpg" alt="Happy at dinner">
-            </figure>
-        </li>
-        <li>
-            <figure>
-                <img  src="images/gallery4.jpg" alt="Posed picture">
-            </figure>
-        </li>
-      </ul>     
-   </div>
 
- <section class="current-resume">
-  <h2 class="resume-link"><a name="resume">Resume</a></h2>
-   <!-- Resume-->
-   <div class="resume-background">
-  <article class="resume">
-     <!-- Qualifications Summary-->
-    <section class="resume-section">
-        <h3>Qualifications Summary</h3>
-        <hr>
-        <div>
-        <ul>
-          <li>
-            Over 7 years experience developing complex software applications
-            with special attention to overall design and code maintainability
-          </li>
-          <li>
-            Strong fundamentals and ability to quickly pick up new technologies
-          </li>
-          <li>
-            Aspires to stay current with the latest technologies through frequent
-            independent coursework and attendance at tech conferences and workshops
-          </li>
-          <li>
-            Excellent collaboration and communication skills, both written and oral,
-            with ability to adapt to changing priorities and conditions and deliver
-            results as a member of either onsite or remote teams
-          </li>
-          <li>
-            Highly skilled at communicating and translating technical specifications
-            to business requirements and vice versa
-          </li>
-        </ul>
-        </div>
-    </section>
-     
-     <!-- Technology Summary-->
-    <section class="resume-section">
-      <h3>Technology Summary</h3>
-      <hr>
-      <div>
-        <ul>
-          <li>
-            <strong>Languages:</strong> JavaScript (ES6/ES5), Ruby, Java, C#, HTML5/CSS/SASS, SQL, PL/SQL
-          </li>
-          <li>
-            <strong>Development Frameworks/Libraries&#58;</strong> ReactJS, Redux, Rails,
-            AngularJS, jQuery, .NET, Foundation5, Bootstrap, Flexbox
-          </li>
-          <li>
-            <strong>Testing Frameworks&#58;</strong> Mocha, Karma, JSDom, Selenium
-          </li>
-          <li>
-            <strong>Databases &#58;</strong> MySQL, Postgres, Oracle, MS Access
-          </li>
-          <li>
-            <strong>Build/Deployment/Web Tools&#58;</strong> Webpack, Yeoman, Grunt, Bower, Jenkins, Emmet
-          </li>
-          <li>
-            <strong>Concepts&#58;</strong> Design Patterns, MVC, Continuous Integration/Source Control (Git),
-            REST, ORM (ActiveRecord), TDD
-          </li>
-        </ul>
-      </div>
-    </section>
+  <div class="container gallery">
+       <div class="row">
+            <div class="col-lg-4">
+                <figure>
+                    <img src="images/gallery1.jpg" alt="Lake Merritt">
+                </figure>
+            </div>
+            <div class="col-lg-4">
+                <figure>
+                    <img src="images/gallery2.jpg" alt="Happy at dinner">
+                </figure>
+            </div>
+            <div class="col-lg-4">
+                <figure>
+                    <img  src="images/gallery4.jpg" alt="Posed picture">
+                </figure>
+            </div>  
+     </div>
+</div>
 
-     <!-- Professional Experience -->
-    <section class="resume-section">
-      <h3>Professional Experience</h3>
-      <hr>
-      <!-- Simmons -->
-      <div>
-        <strong>Simmons Market Research, LLC</strong> (formerly an Experian Marketing Services division)<br>
-        <strong>Jan 2005 - Feb 2017</strong>
-        <p>The business has changed identities multiple times while retaining its
-          overall objective to integrate consumer data from physical and online surveys,
-          device meters, and other sources into a data analysis product marketed to
-          television networks, advertising agencies and other advertisers.
-          My work for the company has spanned 12 years in progressive roles as detailed below:
-        </p>
-        <ol>
-          <!-- Senior Team Lead -->
-          <li>
-            <strong>Jan 2016 - Feb 2017</strong><br>
-            <strong>Senior Software Engineer Team Lead</strong><br>
-              Led a global-team of engineers in a ReactJS/Redux project to translate our front-end,
-              client-facing application from Actionscript/Flex, while simultaneously maintaining
-              and upgrading the original Flex app. My responsibilities encompassed four primary areas:
-            <ul>
-              <li><strong>Development&#58; </strong> writing code for build/release, making design/architecture decisions,
-                leading a contracted 3-member global team
-              </li>
-              <li><strong>Project Management&#58; </strong> translating user stories into technical
-                requirements and creating Jira tickets, writing and maintaining
-                technical documentation, interviewing contractor candidates
-                and making hiring decisions</li>
-              <li><strong>Quality Control&#58;</strong> performing code reviews and executing
-                merge requests; mentoring junior developers
-              </li>
-              <li><strong>DevOps&#58; </strong> configuring and maintaining the Node and Webpack build environments
-              </li>
-            </ul>
-          </li>
 
-          <!-- Senior Engineer -->
-          <li>
-            <strong>Jan 2010 - Jan 2016</strong><br>
-            <strong>Senior Software Engineer</strong><br>
-            <ul>
-              <li>
-                Developed AngularJS and Ruby on Rails modules for project “Nebula,”
-                an ambitious, multi-stage redesign of the company’s internal production system
-              </li>
-              <li>
-                Served as primary applications developer for the Data Collection
-                business unit, maintaining ownership of a large code base and
-                instrumental in automating quality control tasks and reporting
-                functions resulting in substantial cost/time efficiencies
-              </li>
-              <li>
-                Responsible for DevOps tasks including Jenkins build and deployment
-                of client-facing web applications to JBoss and Tomcat, along
-                with associated bash scripting and log analysis
-              </li>
-              <li>
-                Designed and implemented PL/SQL scripts utilizing the
-                CheetahMail API to deliver targeted e-mails and text messages
-                to respondents
-              </li>
-              <li>
-                Key member of award-winning HackDay team. (Experian Global Finalists
-                2013) Project: Geographic / temporal visualization of mobile app usage.
-              </li>
-              <li>
-                Promoted in October 2011 from Software Developer II
-              </li>
-            </ul>
-          </li>
-
-          <!--Data Quality Analyst -->
-          <li>
-            <strong>Jan 2005 - Jan 2010</strong><br>
-            <strong>Data Quality Analyst Expert</strong><br>
-            Led QA process and analysis on all aspects of data collection for an
-            accredited, multi-modal national market research study, including design
-            and implementation of testing methodology, identification of flawed algorithms,
-            revision and documentation of programming instructions, and updates to all
-            materials necessary for project execution.
-            <ul>
-              <li>
-                Conceived and developed a data management QA &amp; Reporting application
-              </li>
-              <li>
-                Chief programming liaison with third-party vendors
-              </li>
-              <li>
-                Received Spirit Award (October 2007) for innovation and teamwork
-              </li>
-              <li>
-                Received Profitability Award (Feb 2008) for contribution to business cost reductions
-              </li>
-              <li>
-                Promoted in June 2008 from Data Quality Analyst Senior
-              </li>
-            </ul>
-          </li>
-        </ol>
-      </div>
-
-      <!--VNU -->
-      <div>
-        <strong>Consumer Research Services; a VNU company</strong><br>
-        <strong>1998 - 2005</strong><br>
-        <strong>Sample Specialist</strong><br>
-        Responsible for quota-tracking, sample ordering, documentation of methodologies,
-        script-testing, and production of status reports for national market research study
-        <ul>
-          <li>
-            Initiated and implemented report automation for the department.
-          </li>
-          <li>
-            Designed relational databases with attention to normalization of data,
-            referential integrity, and query optimization.
-          </li>
-          <li>
-            Delivered an application to track financial institution mergers and acquisitions,
-            resulting in 50% reduction in hours for part-time data entry specialists.
-          </li>
-          <li>
-            Produced HTML help files for industry-specific software.
-          </li>
-        </ul>
-      </div>
-    </section>
-
-     <!-- Eduction -->
-    <section class="resume-section">
-      <h3>Education</h3>
-      <hr>
-      <div>
-        <strong>Mt Sierra College, Monrovia CA</strong><br>
-        B.S. in Computer Information Technology, June 2010<br>
-        4.0 GPA - Department Valedictorian
-      </div>
-    </section>
-  </article>
-  </div>
-</section>
  
   <footer>
     <div class="social-media-links">
