@@ -39,7 +39,7 @@ section {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 25px;
+    margin-top: 100px;
     width:70%;
 }
 /*---------------------------------*/
@@ -178,7 +178,6 @@ header {
         -ms-flex-pack:justify;
             justify-content:space-between;
     width:70%;  
-    
 }
 
 .about p {
@@ -197,6 +196,7 @@ header {
 .social-media-links img {
     margin: 10px;
 }
+
 footer {
     /*flex settings*/
     display: -webkit-box;
